@@ -22,8 +22,6 @@ Welcome to **Sara's Magical World Portfolio**! This is a visually appealing port
 
 - **HTML**: For structuring the content.
 - **CSS**: For styling, animations, and effects.
-- **JavaScript (Optional)**: If any additional interactive features are added.
-
 ---
 
 ## Installation 🔧

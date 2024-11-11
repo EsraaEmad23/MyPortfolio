@@ -1,0 +1,209 @@
+﻿/* تدرج ألوان الخلفية مع الصورة */
+body {
+    background: url('file:///C:/Users/Elnour%20Tech/Desktop/My%20protfolio/WhatsApp%20Image%202024-11-09%20at%2020.46.42_a5a4c50c.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* تأثير النجوم المتحركة في الخلفية */
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png');
+    opacity: 0.3;
+    animation: starsAnimation 2s infinite linear;
+}
+
+@keyframes starsAnimation {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100px, -100px);
+    }
+}
+
+/* عنوان الصفحة */
+.magic-text {
+    font-size: 3em;
+    color: #ff85e0;
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards, sparkle 2s infinite alternate;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes sparkle {
+    0% {
+        text-shadow: 0 0 5px #ff85e0, 0 0 10px #ff85e0;
+    }
+
+    50% {
+        text-shadow: 0 0 20px #ff85e0, 0 0 40px #ff85e0;
+    }
+
+    100% {
+        text-shadow: 0 0 5px #ff85e0, 0 0 10px #ff85e0;
+    }
+}
+
+/* الأقسام في الصفحة */
+.container {
+    position: relative;
+    z-index: 10;
+    padding: 20px;
+}
+
+.section {
+    margin: 50px auto;
+    max-width: 1200px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1.5s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    font-size: 2em;
+    color: #ff85e0;
+}
+
+/* قسم About Me */
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text {
+    margin-right: 30px;
+    font-size: 1.5em;
+    text-align: left;
+    max-width: 600px;
+}
+
+.about-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    object-fit: cover;
+}
+
+/* قسم العمل السابق */
+.project {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    position: relative;
+    animation: moveImages 10s infinite alternate;
+}
+
+@keyframes moveImages {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(30px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.project img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+    .project img:hover {
+        transform: scale(1.05);
+    }
+
+.button {
+    background-color: #ff85e0;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.5em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+    .button:hover {
+        background-color: #f77aff;
+        transform: scale(1.1);
+    }
+/* قسم آراء العملاء */
+.testimonials {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimonial {
+    margin: 20px 0;
+    font-size: 1.2em;
+    color: #e0e0e0;
+}
+
+    .testimonial::before {
+        content: "“";
+        font-size: 2em;
+        color: #ff85e0;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+
+    .testimonial::after {
+        content: "”";
+        font-size: 2em;
+        color: #ff85e0;
+        vertical-align: middle;
+        margin-left: 5px;
+    }
+
+.testimonial-author {
+    font-weight: bold;
+    color: #ff85e0;
+    margin-top: 5px;
+}

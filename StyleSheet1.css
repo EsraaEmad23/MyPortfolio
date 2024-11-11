@@ -1,4 +1,4 @@
-﻿/* تدرج ألوان الخلفية مع الصورة */
+/*  Colours background */
 body {
     background: url('file:///C:/Users/Elnour%20Tech/Desktop/My%20protfolio/WhatsApp%20Image%202024-11-09%20at%2020.46.42_a5a4c50c.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -12,7 +12,7 @@ body {
     position: relative;
 }
 
-/* تأثير النجوم المتحركة في الخلفية */
+/*  stars effect */
 .stars {
     position: absolute;
     top: 0;
@@ -34,7 +34,7 @@ body {
     }
 }
 
-/* عنوان الصفحة */
+/* page titel */
 .magic-text {
     font-size: 3em;
     color: #ff85e0;
@@ -66,7 +66,7 @@ body {
     }
 }
 
-/* الأقسام في الصفحة */
+/*  sections */
 .container {
     position: relative;
     z-index: 10;
@@ -98,7 +98,7 @@ h2 {
     color: #ff85e0;
 }
 
-/* قسم About Me */
+/*   About Me section  */
 .about-me {
     display: flex;
     justify-content: center;
@@ -120,7 +120,7 @@ h2 {
     object-fit: cover;
 }
 
-/* قسم العمل السابق */
+/*  previous work section */
 .project {
     display: flex;
     justify-content: space-around;
@@ -170,7 +170,7 @@ h2 {
         background-color: #f77aff;
         transform: scale(1.1);
     }
-/* قسم آراء العملاء */
+/* testimonials section */
 .testimonials {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 20px;

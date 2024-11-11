@@ -2,7 +2,7 @@
 
 Welcome to **Sara's Magical World Portfolio**! This is a visually appealing portfolio designed to showcase my mobile app designs with a magical world theme. ✨
 
-![Portfolio Screenshot](https://drive.google.com/file/d/11dYm7zcHaYzzm4KNIwKxdtc5UYuJBYBJ/view?usp=drive_link)
+![Portfolio Screenshot](Screenshot 2024-11-11 213121.png)
 
 ---
 
